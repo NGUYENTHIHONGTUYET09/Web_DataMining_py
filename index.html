@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang web khai thác dữ liệu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqk1w2/knoG80k332y5S9bRVp3m/Bc/z0l/B5dKpJ+c7zF/jTN9C/T1+xOvk+aGsIoolRxK+91GxQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Khai thác dữ liệu</a>
+                <ul>
+                    <li><a href="#home" class="active">Trang chủ</a></li>
+                    <li><a href="#algorithm">Thuật toán</a></li>
+                    <li><a href="#blog">Bài đăng</a></li>
+                    <li><a href="#feedback">Góp ý</a></li>
+                    <li><a href="#contact">Liên hệ</a></li>
+                    <li><a href="#" id="open-modal">Đăng nhập</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="container">
+                <div class="hero">
+                    <h1>Khám phá sức mạnh của khai thác dữ liệu</h1>
+                    <p>Chào mừng bạn đến với trang web của chúng tôi, nơi bạn sẽ tìm thấy thông tin về các thuật toán khai thác dữ liệu, bài đăng blog và các tài nguyên hữu ích.</p>
+                    <a href="#" class="btn">Tìm hiểu thêm</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="algorithm">
+            <div class="container">
+                <h2>Thuật toán khai thác dữ liệu</h2>
+                <div class="grid">
+                    <div class="item">
+                        <h3>Thuật toán phân cụm</h3>
+                        <p>Tìm hiểu về các thuật toán phân cụm như k-means, DBSCAN,...</p>
+                        <a href="#" class="btn">Tìm hiểu thêm</a>
+                    </div>
+                    <div class="item">
+                        <h3>Thuật toán phân loại</h3>
+                        <p>Tìm hiểu về các thuật toán phân loại như Logistic Regression, Decision Tree,...</p>
+                        <a href="#" class="btn">Tìm hiểu thêm</a>
+                    </div>
+                    <div class="item">
+                        <h3>Thuật toán hồi quy</h3>
+                        <p>Tìm hiểu về các thuật toán hồi quy như Linear Regression, Polynomial Regression,...</p>
+                        <a href="#" class="btn">Tìm hiểu thêm</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog">
+            <div class="container">
+                <h2>Bài đăng</h2>
+                <div class="grid">
+                    <div class="item">
+                        <img src="https://via.placeholder.com/300x200" alt="Bài đăng 1">
+                        <h3>Tiêu đề bài đăng 1</h3>
+                        <p>Nội dung ngắn gọn về bài đăng 1.</p>
+                        <a href="#" class="btn">Đọc thêm</a>
+                    </div>
+                    <div class="item">
+                        <img src="https://via.placeholder.com/300x200" alt="Bài đăng 2">
+                        <h3>Tiêu đề bài đăng 2</h3>
+                        <p>Nội dung ngắn gọn về bài đăng 2.</p>
+                        <a href="#" class="btn">Đọc thêm</a>
+                    </div>
+                    <div class="item">
+                        <img src="https://via.placeholder.com/300x200" alt="Bài đăng 3">
+                        <h3>Tiêu đề bài đăng 3</h3>
+                        <p>Nội dung ngắn gọn về bài đăng 3.</p>
+                        <a href="#" class="btn">Đọc thêm</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="feedback">
+            <div class="container">
+                <h2>Góp ý</h2>
+                <form action="#">
+                    <label for="name">Tên của bạn:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email của bạn:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Tin nhắn của bạn:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Gửi</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Liên hệ</h2>
+                <p>Số điện thoại: 0396***004</p>
+                <p>Email: nguyenthihongtuyet004@gmail.com</p>
+            </div>
+        </section>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="login-form">
+                    <h2>Đăng nhập</h2>
+                    <form action="#">
+                        <label for="username">Tên đăng nhập:</label>
+                        <input type="text" id="username" name="username" required>
+
+                        <label for="password">Mật khẩu:</label>
+                        <input type="password" id="password" name="password" required>
+
+                        <button type="submit">Đăng nhập</button>
+                    </form>
+                    <p>Chưa có tài khoản? <a href="#" id="show-register">Đăng ký</a></p>
+                </div>
+                <div id="register-form" style="display: none;">
+                    <h2>Đăng ký</h2>
+                    <form action="#">
+                        <label for="new-username">Tên đăng nhập:</label>
+                        <input type="text" id="new-username" name="new-username" required>
+
+                        <label for="new-password">Mật khẩu:</label>
+                        <input type="password" id="new-password" name="new-password" required>
+
+                        <button type="submit">Đăng ký</button>
+                    </form>
+                    <p>Hoặc đăng nhập bằng Google:</p>
+                    <button id="google-login" class="google-button">
+                        <i class="fab fa-google"></i> Đăng nhập bằng Google
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3>Khai thác dữ liệu</h3>
+                    <p>Trang web này cung cấp thông tin về các thuật toán khai thác dữ liệu, bài đăng blog và các tài nguyên hữu ích.</p>
+                </div>
+                <div class="col">
+                    <h3>Liên kết</h3>
+                    <ul>
+                        <li><a href="#home">Trang chủ</a></li>
+                        <li><a href="#algorithm">Thuật toán</a></li>
+                        <li><a href="#blog">Bài đăng</a></li>
+                        <li><a href="#feedback">Góp ý</a></li>
+                        <li><a href="#contact">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Liên hệ</h3>
+                    <p>Địa chỉ: ...</p>
+                    <p>Email: nguyenthihongtuyet004@gmail.com</p>
+                    <p>Điện thoại: 0396***004</p>
+                    <ul class="social">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2023 Khai thác dữ liệu. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
